@@ -1,8 +1,8 @@
 {
   "functions": [
     {
-      "source": "functions",
-      "codebase": "default",
+      "source": ".output/server",
+      "codebase": "nuxt",
       "ignore": [
         "node_modules",
         ".git",
@@ -16,12 +16,13 @@
     "indexes": "firestore.indexes.json"
   },
   "hosting": {
-    "site": "artemiz-7c2c2",
     "public": ".output/public",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
+    "cleanUrls": true,
+    "rewrites": [
+      {
+        "source": "**",
+        "function": "server"
+      }
     ]
   }
 }

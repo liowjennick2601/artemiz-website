@@ -35,8 +35,8 @@ function changeValue() {
 </script>
 
 <template>
-  <!-- <h2>{{ stuff }}</h2>
+  <h2>{{ stuff }}</h2>
   <h2>{{ test }}</h2>
-  <h1 @click="changeValue">Home Page</h1> -->
+  <h1 @click="changeValue">Home Page</h1>
   <h1>Up yours</h1>
 </template>
