@@ -1,9 +1,8 @@
 <script setup>
 import { collection, doc, setDoc, getDoc, getDocs } from "firebase/firestore";
+import ContactUsForm from "../components/forms/ContactUsForm.vue";
 
 const nuxtApp = useNuxtApp();
-
-// const { data: serverData } = useFetch("/api/products");
 
 let headData;
 
@@ -39,4 +38,6 @@ function changeValue() {
   <h2>{{ test }}</h2>
   <h1 @click="changeValue">Home Page</h1>
   <h1>Up yours</h1>
+
+  <ContactUsForm />
 </template>

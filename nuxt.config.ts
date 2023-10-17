@@ -3,3 +3,6 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   nitro: { preset: 'firebase', firebase: { nodeVersion: "18", gen: 2, httpsOptions: { region: 'us-central1', maxInstances: 50, }, }, },
 })
+
+// NITRO_PRESET=firebase npm run build
+// firebase deploy --debug
