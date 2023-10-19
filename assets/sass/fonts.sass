@@ -1,0 +1,38 @@
+@import "./variables"
+
+@for $i from 1 through 9
+  .butler-#{$i * 100}
+    font-family: "Butler"
+    font-weight: $i * 100
+
+@for $i from 1 through 9
+  .nourd-#{$i * 100}
+    font-family: "Nourd"
+    font-weight: $i * 100
+
+.font-drop-shadow-white
+  background: white
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+  -webkit-filter: drop-shadow(1px 2px 2px black)
+
+.font-drop-shadow-yellow
+  background: -webkit-linear-gradient($dark-yellow, $light-yellow)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+  -webkit-filter: drop-shadow(1px 2px 2px black)
+
+.font-color-light-yellow
+  color: $light-yellow
+
+.font-color-dark-yellow
+  color: $dark-yellow
+
+.font-color-light-green
+  color: $light-green
+
+.font-color-dark-green
+  color: $dark-green
+
+.font-color-white
+  color: white

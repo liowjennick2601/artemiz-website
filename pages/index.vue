@@ -1,6 +1,7 @@
 <script setup>
 import { collection, doc, setDoc, getDoc, getDocs } from "firebase/firestore";
 import ContactUsForm from "../components/forms/ContactUsForm.vue";
+import TheArtOfArtemiz from "~/components/landing-page/TheArtOfArtemiz.vue";
 
 const nuxtApp = useNuxtApp();
 
@@ -34,10 +35,23 @@ function changeValue() {
 </script>
 
 <template>
-  <h2>{{ stuff }}</h2>
+  <div
+    id="landing-page"
+    class="background-gradient-green-light-to-dark"
+  >
+    <!-- <h2>{{ stuff }}</h2>
   <h2>{{ test }}</h2>
   <h1 @click="changeValue">Home Page</h1>
-  <h1>Up yours</h1>
+  <h1>Up yours</h1> -->
 
-  <ContactUsForm />
+    <TheArtOfArtemiz />
+    <ContactUsForm />
+  </div>
 </template>
+
+<style lang="sass">
+@import "../assets/sass/variables"
+@import "../assets/sass/global"
+
+#landing-page
+</style>

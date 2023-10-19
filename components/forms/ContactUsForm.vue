@@ -172,32 +172,34 @@ async function submitContactUsForm() {
 </template>
 
 <style lang="sass">
-
-html, body
-  padding: 0
-  margin: 0
-
-.container
-  max-width: 1200px
-  padding: 0 20px
-  margin: 0 auto
-
+@import './assets/sass/responsive'
 #contact-us
   padding: 80px 0
-  background: rgb(0,36,27)
-  background: linear-gradient(90deg, rgba(0,36,27,1) 0%, rgba(9,121,51,1) 100%)
+  // background: rgb(0,36,27)
+  // background: linear-gradient(90deg, rgba(0,36,27,1) 0%, rgba(9,121,51,1) 100%)
   .container
     display: flex
+    +mobile
+      flex-direction: column
     .left-container
       flex: 2
       padding-right: 40px
+      +mobile
+        padding-right: 0
+        margin-bottom: 20px
       h3
         text-align: right
+        +mobile
+          text-align: left
       p
         text-align: right
+        +mobile
+          text-align: left
     .right-container
       flex: 3
       padding-left: 40px
+      +mobile
+        padding-left: 0px
       #contact-us-form
         display: flex
         flex-wrap: wrap
@@ -230,25 +232,25 @@ html, body
           border: 1px solid white
 
 
-h3
-  font-family: "Butler"
-  font-weight: 900
-  margin-bottom: 5px
-  color: yellow
-  font-size: 42px
-  line-height: 52px
-  background: -webkit-linear-gradient(#e6b253, #fadeaa)
-  -webkit-background-clip: text
-  -webkit-text-fill-color: transparent
-  -webkit-filter: drop-shadow(1px 2px 2px black)
-p
-  color: white
-  font-size: 16px
-  line-height: 28px
-  font-family: "Nourd"
-  font-weight: 300
+  h3
+    font-family: "Butler"
+    font-weight: 900
+    margin-bottom: 5px
+    color: yellow
+    font-size: 42px
+    line-height: 52px
+    background: -webkit-linear-gradient(#e6b253, #fadeaa)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    -webkit-filter: drop-shadow(1px 2px 2px black)
+  p
+    color: white
+    font-size: 16px
+    line-height: 28px
+    font-family: "Nourd"
+    font-weight: 300
 
-.vuetify-text-input
-  color: white
-  background-color: transparent
+  .vuetify-text-input
+    color: white
+    background-color: transparent
 </style>

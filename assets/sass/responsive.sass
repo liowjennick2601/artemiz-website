@@ -1,0 +1,22 @@
+=mobile
+  @media screen and (max-width: 800px)
+    @content
+
+=desktop
+  @media screen and (min-width: 800px)
+    @content
+
+.desktop
+  +mobile
+    display: none !important
+
+.mobile
+  +desktop
+    display: none !important
+
+$ouch-pink: #ea1f59
+$ouch-green: #32DDB0
+$ouch-blue: #00ADEF
+$ouch-gray: #C4C4C4
+$ouch-yellow: #FCEC7E
+
