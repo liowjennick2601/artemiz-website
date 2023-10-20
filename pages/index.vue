@@ -2,6 +2,7 @@
 import { collection, doc, setDoc, getDoc, getDocs } from "firebase/firestore";
 import ContactUsForm from "../components/forms/ContactUsForm.vue";
 import OurMediaEmpire from "~/components/landing-page/OurMediaEmpire.vue";
+import OurXFactor from "~/components/landing-page/OurXFactor.vue";
 import TheArtOfArtemiz from "~/components/landing-page/TheArtOfArtemiz.vue";
 
 const nuxtApp = useNuxtApp();
@@ -46,6 +47,7 @@ function changeValue() {
   <h1>Up yours</h1> -->
 
     <TheArtOfArtemiz />
+    <OurXFactor />
     <OurMediaEmpire />
     <ContactUsForm />
   </div>

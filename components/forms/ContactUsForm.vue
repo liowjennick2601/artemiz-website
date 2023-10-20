@@ -73,9 +73,9 @@ async function submitContactUsForm() {
     <div class="container">
       <div class="left-container">
         <h3 class="mb-4">
-          Scale Your <br />
-          Revenue 10x Faster<br />
-          Than In-House
+          <span class="line-1">Scale Your</span> <br />
+          <span class="line-2">Revenue 10x Faster</span><br />
+          <span class="line-3">Than In-House</span>
         </h3>
         <p>Fill out this form and we will call you to understand your business and your goals. If we can help you, we will develop a free customised digital marketing strategy.</p>
       </div>
@@ -172,7 +172,11 @@ async function submitContactUsForm() {
 </template>
 
 <style lang="sass">
-@import './assets/sass/responsive'
+@import '../../assets/sass/responsive'
+@import "../../assets/sass/variables"
+@import "../../assets/sass/global"
+@import "../../assets/sass/fonts"
+
 #contact-us
   padding: 80px 0
   // background: rgb(0,36,27)
@@ -189,10 +193,22 @@ async function submitContactUsForm() {
         margin-bottom: 20px
       h3
         text-align: right
+        font-family: "Nourd"
+        @include font-drop-shadow-yellow
+        font-size: 40px
+        .line-1
+          font-size: 60px
+          line-height: 55px
+        .line-2
+          font-size: 33px
+        .line-3
+          font-size: 45px
+          line-height: 45px
         +mobile
           text-align: left
       p
         text-align: right
+        @include regular-white-nourd
         +mobile
           text-align: left
     .right-container
@@ -227,28 +243,10 @@ async function submitContactUsForm() {
         cursor: pointer
         display: inline-block
         background-color: rgba(0,36,27,0.5)
+        @include regular-white-nourd
         &:hover
           font-weight: 900
           border: 1px solid white
-
-
-  h3
-    font-family: "Butler"
-    font-weight: 900
-    margin-bottom: 5px
-    color: yellow
-    font-size: 42px
-    line-height: 52px
-    background: -webkit-linear-gradient(#e6b253, #fadeaa)
-    -webkit-background-clip: text
-    -webkit-text-fill-color: transparent
-    -webkit-filter: drop-shadow(1px 2px 2px black)
-  p
-    color: white
-    font-size: 16px
-    line-height: 28px
-    font-family: "Nourd"
-    font-weight: 300
 
   .vuetify-text-input
     color: white

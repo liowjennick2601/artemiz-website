@@ -44,13 +44,20 @@
   background: -webkit-linear-gradient($dark-yellow, $light-yellow)
   -webkit-background-clip: text
   -webkit-text-fill-color: transparent
-  -webkit-filter: drop-shadow(1px 2px 2px black)
+  -webkit-filter: drop-shadow(4px 4px 2px black)
 
 @mixin large-yellow-header-butler
   @include font-drop-shadow-yellow
   font-family: "Butler"
   font-size: 80px
   line-height: 90px
+  font-weight: 900
+
+@mixin medium-yellow-header-butler
+  @include font-drop-shadow-yellow
+  font-family: "Butler"
+  font-size: 40px
+  line-height: 50px
   font-weight: 900
 
 @mixin regular-yellow-butler-bold
