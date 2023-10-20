@@ -36,3 +36,35 @@
 
 .font-color-white
   color: white
+
+@mixin font-color-white
+  color: white
+
+@mixin font-drop-shadow-yellow
+  background: -webkit-linear-gradient($dark-yellow, $light-yellow)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+  -webkit-filter: drop-shadow(1px 2px 2px black)
+
+@mixin large-yellow-header-butler
+  @include font-drop-shadow-yellow
+  font-family: "Butler"
+  font-size: 80px
+  line-height: 90px
+  font-weight: 900
+
+@mixin regular-yellow-butler-bold
+  @include font-drop-shadow-yellow
+  font-family: "Butler"
+  font-size: 28px
+  line-height: 34px
+  font-weight: 900
+
+@mixin regular-white-nourd
+  @include font-color-white
+  font-family: "Nourd"
+  font-size: 22px
+  line-height: 34px
+  
+
+
