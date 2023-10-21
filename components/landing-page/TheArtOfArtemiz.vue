@@ -9,7 +9,7 @@
       <div class="left-container">
         <h2 class="nourd-900 font-drop-shadow-white">The</h2>
         <h2 class="nourd-900 font-drop-shadow-white">Art of</h2>
-        <h2 class="nourd-900 background-gradient-yellow-light-to-dark font-color-dark-green">ARTEMIZ</h2>
+        <h2 class="artemiz-text nourd-900 background-gradient-yellow-light-to-dark font-color-dark-green">ARTEMIZ</h2>
       </div>
 
       <div class="right-container">
@@ -33,21 +33,35 @@
     display: flex
     position: relative
     padding: 60px 0
+    +mobile
+      flex-direction: column
     .left-container
       position: absolute
       top: 120px
+      +mobile
+        position: relative
+        top: 0
       h2
         padding-left: 60px
         font-size: 60px
         padding-right: 10px
+        +mobile
+          padding-left: 20px
+      .artemiz-text
+        display: inline-block
     .right-container
       margin-left: 280px
+      +mobile
+        margin-left: 0px
       .content-container
         background-color: $dark-green
         padding: 80px 120px 120px 180px
+        +mobile
+          padding: 80px 20px
+          margin-top: -60px
         p
+          @include regular-white-nourd
           margin-bottom: 20px
-          font-size: 20px
-          line-height: 40px
-          color: white
+          +mobile
+            margin-bottom: 20px
 </style>

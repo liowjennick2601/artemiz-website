@@ -46,6 +46,8 @@
   left: -100%
   top: 0
   width: 100%
+  +mobile
+    display: none
 
 #elevating-excellence-every-day
   .container
@@ -57,6 +59,9 @@
         flex: 2
         padding-right: 10%
         padding-left: 80px
+        padding-top: 80px
+        +mobile
+          display: none
         .image-container
           font-size: 0
           height: 100%
@@ -72,6 +77,10 @@
         right: 0
         top: 50%
         transform: translateY(-50%)
+        +mobile
+          position: initial
+          width: 100%
+          transform: none
         .title
           @include large-yellow-header-butler
         .title-text-white
@@ -91,7 +100,7 @@
         justify-content: space-between
         .statistic-item
           flex: 0 0 48%
-          padding: 40px
+          padding: 20px 40px
           filter: drop-shadow(5px 5px 2px black)
           border-radius: 8px
           h2
@@ -103,5 +112,5 @@
             text-align: center
             font-family: "Nourd"
             font-weight: 700
-            font-size: 22px
+            font-size: 18px
 </style>

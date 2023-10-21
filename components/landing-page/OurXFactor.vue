@@ -68,14 +68,20 @@
         width: 70%
         background-color: $dark-green
         padding: 80px 220px 80px 80px
+        +mobile
+          width: 100%
+          padding: 40px
       .right-container
         position: absolute
         width: 40%
         right: 50px
         top: 50%
         transform: translateY(-50%)
+        +mobile
+          display: none
         img
           width: 80%
+
 
     .we-care-about-results-section
       position: relative
@@ -86,15 +92,24 @@
       .left-container
         width: 40%
         z-index: 2
+        +mobile
+          display: none
         img
           width: 40%
           position: absolute
           top: 50%
           transform: translateY(-50%)
+          +mobile
+            top: 0
+            right: 0
+            width: 100%
       .right-container
         width: 70%
         z-index: 1
         margin-left: auto
         padding: 80px 80px 80px 220px
         background-color: $dark-green
+        +mobile
+          width: 100%
+          padding: 40px
 </style>

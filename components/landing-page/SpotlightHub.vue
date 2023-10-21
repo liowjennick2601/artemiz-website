@@ -64,8 +64,13 @@
 #spotlight-hub
   background-color: $dark-green
   .container
+    .top-content-container
+      +mobile
+        flex-direction: column
     .top-content-container, .bottom-content-container
       display: flex
+      +mobile
+        flex-direction: colunn
       .title-container
         .title
           @include large-yellow-header-butler
@@ -78,21 +83,35 @@
       .item-container
         display: flex
         padding-left: 80px
+        +mobile
+          padding-left: 0px
+          flex-direction: column
+          flex-wrap: wrap
+          margin-bottom: 80px
         &.bottom
           flex-direction: column
           padding-left: 0px
           flex: 0 0 30%
+          +mobile
+            flex: 0 1 100%
           .image-container
             margin-bottom: 20px
           .copy-container
             padding-left: 0px
         .image-container
           flex: 5
+          margin-bottom: 10px
+          +mobile
+            flex: 0
+            width: 100%
           img
             width: 100%
         .copy-container
           flex: 6
           padding-left: 20px
+          +mobile
+            flex: 1
+            padding-left: 0px
           .title
             @include medium-yellow-header-butler
             font-size: 30px
@@ -104,4 +123,8 @@
         display: flex
         justify-content: space-between
         margin-top: 40px
+        +mobile
+          flex-direction: column
+          justify-content: start
+          margin-top: 0px
 </style>

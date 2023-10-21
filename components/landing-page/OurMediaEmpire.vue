@@ -83,17 +83,26 @@
       @include regular-white-nourd
       text-align: center
       padding: 0 120px
+      +mobile
+        padding: 0
       margin-bottom: 80px
     .featured-media-section
       .featured-media-list-container
         display: flex
         justify-content: space-evenly
+        flex-wrap: wrap
         .featured-media-container
           flex: 0 0 32.5%
+          +mobile
+            flex: 0 0 100%
+            margin-bottom: 80px
           .logo
             height: 60px
             display: block
             margin: 0 auto
+            +mobile
+              height: auto
+              width: 200px
           .featured-image
             width: 100%
             padding: 0 20px

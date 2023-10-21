@@ -4,6 +4,8 @@
 html, body
   padding: 0
   margin: 0
+  max-width: 100vw
+  overflow-x: hidden
 
 .container
   max-width: 1400px
@@ -11,10 +13,10 @@ html, body
   margin: 0 auto
   position: relative
   +mobile
-    padding: 0 40px
+    padding: 0 20px
 
 .section
-  padding: 80px 40px
+  padding: 80px 20px
 
 .background-gradient-yellow-light-to-dark
   background: linear-gradient(90deg, $light-yellow, $dark-yellow)

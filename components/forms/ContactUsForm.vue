@@ -223,6 +223,8 @@ async function submitContactUsForm() {
         .input-container
           flex: 0 0 49%
           margin-bottom: 10px
+          +mobile
+            flex: 0 0 100%
           input
             background-color: transparent
             -webkit-appearance: none
