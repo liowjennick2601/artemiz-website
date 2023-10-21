@@ -103,5 +103,5 @@
             text-align: center
             font-family: "Nourd"
             font-weight: 700
-            font-size: 18px
+            font-size: 22px
 </style>
