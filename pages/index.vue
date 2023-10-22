@@ -8,6 +8,8 @@ import ElevatingExcellence from "~/components/landing-page/ElevatingExcellence.v
 import TheArtOfArtemiz from "~/components/landing-page/TheArtOfArtemiz.vue";
 import DigitalTriumphs from "~/components/landing-page/DigitalTriumphs.vue";
 import AiEfficiency from "~/components/landing-page/AiEfficiency.vue";
+import YesWeMadeOurOwnAi from "~/components/landing-page/YesWeMadeOurOwnAi.vue";
+import EmpowerYourBusiness from "~/components/landing-page/EmpowerYourBusiness.vue";
 
 const nuxtApp = useNuxtApp();
 
@@ -51,6 +53,8 @@ function changeValue() {
   <h1>Up yours</h1> -->
 
     <TheArtOfArtemiz />
+    <EmpowerYourBusiness />
+    <YesWeMadeOurOwnAi />
     <AiEfficiency />
     <DigitalTriumphs />
     <ElevatingExcellence />

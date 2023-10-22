@@ -67,6 +67,17 @@
     font-size: 60px
     line-height: 70px
 
+@mixin large-white-header-butler
+  font-family: "Butler"
+  font-size: 80px
+  line-height: 90px
+  font-weight: 900
+  color: white
+  -webkit-filter: drop-shadow(4px 4px 2px black)
+  +mobile
+    font-size: 60px
+    line-height: 70px
+
 @mixin medium-yellow-header-butler
   @include font-drop-shadow-yellow
   font-family: "Butler"
