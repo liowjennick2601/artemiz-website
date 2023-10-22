@@ -32,12 +32,12 @@
   .container
     display: flex
     position: relative
-    padding: 60px 0
+    padding: 0 0 60px 0
     +mobile
       flex-direction: column
     .left-container
       position: absolute
-      top: 120px
+      top: 60px
       +mobile
         position: relative
         top: 0

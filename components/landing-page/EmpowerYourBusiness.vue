@@ -65,6 +65,7 @@
 
 #empower-your-business
   .container
+    padding-top: 0px
     .content-container
       h2
         @include large-yellow-header-butler
