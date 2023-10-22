@@ -57,6 +57,16 @@
     font-size: 60px
     line-height: 70px
 
+@mixin large-dark-green-header-butler
+  font-family: "Butler"
+  font-size: 80px
+  line-height: 90px
+  font-weight: 900
+  color: $dark-green
+  +mobile
+    font-size: 60px
+    line-height: 70px
+
 @mixin medium-yellow-header-butler
   @include font-drop-shadow-yellow
   font-family: "Butler"
@@ -76,6 +86,15 @@
 
 @mixin regular-white-nourd
   @include font-color-white
+  font-family: "Nourd"
+  font-size: 22px
+  line-height: 34px
+  +mobile
+    font-size: 18px
+    line-height: 30px
+
+@mixin regular-dark-green-nourd
+  color: $dark-green
   font-family: "Nourd"
   font-size: 22px
   line-height: 34px

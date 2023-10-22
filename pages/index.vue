@@ -7,6 +7,7 @@ import SpotlightHub from "~/components/landing-page/SpotlightHub.vue";
 import ElevatingExcellence from "~/components/landing-page/ElevatingExcellence.vue";
 import TheArtOfArtemiz from "~/components/landing-page/TheArtOfArtemiz.vue";
 import DigitalTriumphs from "~/components/landing-page/DigitalTriumphs.vue";
+import AiEfficiency from "~/components/landing-page/AiEfficiency.vue";
 
 const nuxtApp = useNuxtApp();
 
@@ -50,6 +51,7 @@ function changeValue() {
   <h1>Up yours</h1> -->
 
     <TheArtOfArtemiz />
+    <AiEfficiency />
     <DigitalTriumphs />
     <ElevatingExcellence />
     <OurMediaEmpire />
@@ -62,6 +64,4 @@ function changeValue() {
 <style lang="sass">
 @import "../assets/sass/variables"
 @import "../assets/sass/global"
-
-#landing-page
 </style>
